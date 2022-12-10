@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "node ./scripts/create-env.js && webpack --mode production --config webpack.config.js",
-    "dev": "webpack --config webpack.config.dev.js",
     "build:watch": "webpack --watch --config webpack.config.js",
+    "dev": "webpack --config webpack.config.dev.js",
+    "watch": "npm run dev --watch",
     "start": "webpack server --config webpack.config.dev.js"
   },
   "repository": {
